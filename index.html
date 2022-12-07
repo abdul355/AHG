@@ -1,0 +1,740 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    
+    <title>About</title>
+</head>
+
+<body>
+    <nav>
+        <div class="logo">
+            <h1>Portfol<span>io</span> </h1>
+        </div>
+        <ul class="links">
+            <li><a href="Home.html" class="active">Home</a></li>
+            <li><a href="Project.html">Project</a></li>
+            <li><a href="Contact.html">Contact</a></li>
+           
+
+        </ul>
+    </nav>
+    <section class="about">
+        <div class="main">
+            <img src="/imag.jpg">
+            <div>
+                <div class="about-text">
+                    <h2>About <span>Me</span></h2>
+                    <h4>Creative Web <span>Developer</span>!</h4>
+                    <p>I am web developer with more than a decade experience in 
+                        different jobs from administrative to technical. 
+                    </p> <br>
+                    
+                        <h4>Education<span>!</span></h4>
+                        <p>
+                            I am a 2nd year student at Renton Technical Collage studing 
+                            computer science program. So for I have learned how to program
+                            a static websites and program some applications. 
+                        </p> 
+                        <br>
+                        <p><a href="/Abdul Hafiz Ghanizada Resume.docx Amazon.docx" class="one">Please Read My Resume Here</a></p>
+
+                </div>
+            </div>
+
+
+
+
+    </section>
+    <footer>
+        <h4>&copy Copyright. Abdul Hafiz Ghanizada</h4>
+    </footer>
+
+</body>
+
+</html>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css"> 
+    
+    <script src="https://kit.fontawesome.com/3052d4e94c.js" crossorigin="anonymous"></script>
+    <title>Contact</title>
+
+    
+</head>
+
+<body>
+
+    <nav>
+        <div class="logo">
+            <h1>Portfol<span>io</span> </h1>
+        </div>
+        <ul class="links">
+            <li><a href="Home.html">Home</a></li>
+            <li><a href="Project.html">Project</a></li>
+            <li><a href="About.html">About</a></li>
+
+        </ul>
+    </nav>
+
+    <section class="contact">
+        <div class="content">
+            <h2>Contact Me</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Quos quaerat dolores veniam atque obcaecati possimus
+                praesentium quia ducimus blanditiis inventore voluptas
+                assumenda laboriosam dolorum, accusamus laborum sunt
+                ullam, earum excepturi!</p>
+
+        </div>
+
+        <div class="containerContact">
+            <div class="contactInfo">
+                <div class="box">
+                    <div class="icon"><i class="fa-solid fa-map"></i></div>
+                    <div class="text">
+                        <h3>Address</h3>
+                        <p>Kent, Washington, USA</p>
+                    </div>
+                </div>
+               
+                <div class="box">
+                    <div class="icon"><i class="fa-solid fa-phone"></i></i></div>
+                    <div class="text">
+                        <h3>Phone</h3>
+                        <p>000-000-0000</p>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="icon"><i class="fa-solid fa-envelope"></i></div>
+                    <div class="text">
+                        <h3>Email</h3>
+                        <p>aghaniza25@gmail.com</p>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="contactForm">
+                <form>
+                    <h2>Send Message</h2>
+                    <div class="inputBox">
+                        <input type="text" name="" required="required">
+                        <span>Full Name</span>
+                    </div>
+                    <div class="inputBox">
+                        <input type="text" name="" required="required">
+                        <span>Email</span>
+                    </div>
+                    <div class="inputBox">
+                        <textarea required="required"></textarea>
+                        <span>Type your Message</span>
+                    </div>
+                    <div class="inputBox">
+                        <input type="submit" name="" value="Send">
+
+                    </div>
+                </form>
+
+            </div>
+        </div>
+
+           
+    </section>
+
+    <footer>
+        <h4>&copy Copyright. Abdul Hafiz Ghanizada</h4>
+    </footer>
+
+</body>
+
+</html>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Template Areas</title>
+    <style>
+        .item{
+            background-color: lightgray;
+            text-align: center;
+            padding: 20px;
+            font-size: 30px;
+        }
+        .container{
+            display: grid;
+            background-color: lightskyblue;
+            padding: 20px;
+            grid-gap: 20px;
+            /* grid-template-areas */
+            grid-template-areas:
+            'nav nav nav nav nav nav'
+            'header header header header header header'
+            'left-side article article article article right-side'
+            'footer footer footer footer footer footer'
+            ;
+        }
+        /* Set a "variable name" for each of our containers
+        using a grid-area property */
+        #nav {
+            /* Now I can refer to this element by the name nav
+            inside of my grid-template areas */
+            grid-area: nav;
+        }
+        #header{
+            grid-area: header;
+        }
+        #article{
+            grid-area: article;
+        }
+        #left-side{
+            grid-area: left-side;
+        }
+        #right-side{
+            grid-area: right-side;
+        }
+        #footer{
+            grid-area: footer;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Grid Template Areas</h1>
+    <div class="container">
+        <nav class="item" id="nav">NavBar</nav>
+        <header class="item" id="header">Header</header>
+        <aside class="item" id="left-side">Left - Lorem ipsum dolor sit amet consectetur adipisicing
+            elit. Assumenda maxime neque ut possimus suscipit. Vitae totam vel architecto non
+            quibusdam reprehenderit numquam in libero delectus! Eius et esse provident quod.
+        </aside>
+        <article class="item" id="article">Article - Lorem ipsum dolor sit amet consectetur adipisicing
+            elit. Assumenda maxime neque ut possimus suscipit. Vitae totam vel architecto non
+            quibusdam reprehenderit numquam in libero delectus! Eius et esse provident quod.
+        </article>
+        <aside class="item" id="right-side">Right - Lorem ipsum dolor sit amet consectetur adipisicing
+            elit. Assumenda maxime neque ut possimus suscipit. Vitae totam vel architecto non
+            quibusdam reprehenderit numquam in libero delectus! Eius et esse provident quod.
+        </aside>
+        <footer class="item" id="footer">Footer</footer>
+    </div>
+</body>
+
+</html>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@700&display=swap" rel="stylesheet"> 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@900&display=swap" rel="stylesheet"> -->
+
+
+    <title>Home</title>
+</head>
+
+<body>
+
+    <nav class="nav">
+        <div class="logo">
+            <h1>Portfol<span>io</span> </h1>
+        </div>
+        <ul class="links">
+            <li><a href="Home.html">Home</a></li>
+            <li><a href="Project.html">Project</a></li>
+            <li><a href="Contact.html">Contact</a></li>
+            <li><a href="About.html">About</a></li>
+
+        </ul>
+    </nav>
+
+
+
+    <section class="home">
+
+        <div class="home-text">
+            <div class="slide">
+                <span class="one">Hello</span>
+                <span class="two">I'm</span>
+
+            </div>
+            <h1>Abdul Hafiz Ghanizada</h1>
+            <h3>Web <span>Developer.</span></h3>
+            <p>An experience web developer that promote businesses
+              by creating responsive websites</p>
+
+
+        </div>
+
+
+    </section>
+    <footer>
+        <h4>&copy Copyright. Abdul Hafiz Ghanizada</h4>
+    </footer>
+
+
+
+</body>
+
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="Home.html">
+    <title>Project</title>
+</head>
+<body>
+    <nav>
+        <div class="logo">
+            <h1>Portfol<span>io</span> </h1>
+        </div>
+        <ul class="links">
+            <li><a href="Home.html">Home</a></li>
+            <li><a href="Contact.html">Contact</a></li>
+            <li><a href="About.html">About</a></li>
+
+        </ul>
+    </nav>
+    
+        
+    <div class="container">
+        <nav class="title" id="title"><h2>My Favorites Future Projects</h2></nav>
+        <div class="item" id="left-side">I would like to create a website like Udemy Coursera
+            that teaches computer science programs for people who want to have a career 
+            in information technology. 
+
+            
+        </div>
+        <div class="item" id="article">I would like to code an app that can predict the increase 
+            and decrease in the stock market.  
+        </div>
+        <div class="item" id="right-side"> I would like to create a website or an app that 
+            can work as my personal assistant which can make appointments, do the shopping, 
+            and do my other sample daily tasks
+        </div>
+       
+    </div>
+    <footer>
+        <h4>&copy Copyright. Abdul Hafiz Ghanizada</h4>
+    </footer>
+</body>
+</html>
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   
+}
+
+/* Home */
+
+body {
+    background-color: rgb(53, 48, 48); 
+    color: #fff;
+  }
+
+nav{
+    display: flexbox;
+    z-index: 10;
+    left: 0;
+    right: 0;
+    top: 0;
+    /* font-family: 'Courier New', Courier, monospace; */
+    font-family: 'Nunito', sans-serif;
+    padding: 0 5%;
+    height: 100px;
+    background-color: rgb(53, 48, 48);
+
+
+}
+nav .logo{
+    float: left;
+    width: 40%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    font-family: 'Nunito', sans-serif;
+    font-size: 24px;
+    font-style: italic;
+    color: #fff;
+}
+span{
+    color: red;
+}
+nav .links{
+    float: right;
+    padding: 0;
+    margin: 0;
+    width: 60%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: 'Nunito', sans-serif;
+}
+nav .links li{
+    list-style: none;
+}
+nav .links a:hover{
+    color: red;
+}
+nav a.active{
+    color: red;
+}
+nav .links a{
+    display: block;
+    padding: 1em;
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+    text-decoration: none;
+}
+
+
+section{
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-gap: 2rem;
+    padding: 50px;
+    height: 100%;
+    width: 100%;
+}
+.home{ 
+    
+    position:fixed;  
+    height: 100%; 
+    width: 100%;  
+    background-size: cover;
+    background-position: right; 
+    display:flex;
+    align-items: center; 
+    justify-content: flex-start; 
+    font-family: 'Nunito', sans-serif;
+    
+}
+.home img{
+    /* justify-items: ; */
+    height: 80%;
+    width: 100%;
+    padding-bottom: 50px;
+}
+.slide{
+    margin-bottom: 20px;
+}
+
+.one{
+    display: inline-block;
+    margin-right: 15px;
+    height: 32px;
+    padding: 0 15px;
+    line-height: 32px;
+    font-size: 20px;
+    font-weight: 500;
+    border-radius: 5px;
+    background: red;
+    color: #fff;
+    
+
+}
+
+.two{
+    display: inline-block;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 500;
+
+}
+.home-text h1{
+    font-size: 50px;
+    font-weight: 700;
+    color: #fff;
+    line-height: 1.1;
+    margin: 0 0 8px;
+}
+.home-text h3{
+    color: #fff;
+    margin: 0 0 35px;
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 1.1;
+}
+.home-text p{
+    color: #fff;
+    font-size: 20px;
+    line-height: 1.8;
+    margin: 40px;
+    
+}
+
+
+footer {
+    /* border-top: solid 1px; */
+    /* background: rgba(150, 150, 150, 0.5); */
+    width: 100%;
+    height: 40px;
+    padding-top: 10px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    text-align: center;
+  }
+footer h4{
+    position: absolute;
+    left: 45%;
+}
+@media (max-width: 991px){
+    .nav{
+        padding: 50px;
+    }
+    .home{
+        padding: 50px;
+    }
+}
+/* about */
+section .about{
+    width: 100%;
+    padding: 78px 0px;
+    background-color: #191919;
+}
+.about img{
+    height: auto;
+    width: 450px;
+    align-items: right;
+}
+.about-text{
+    width: 550px;
+    font-family: 'Nunito', sans-serif;
+}
+.main{
+    width: 1130px;
+    max-width: 95%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.about-text h4{
+    font-size: 20px;
+    text-transform: capitalize;
+    margin-bottom: 25px;
+    letter-spacing: 2px;
+
+}
+.item{
+  
+    text-align: center;
+    padding: 50px;
+    border: 2px solid #eee;
+    
+    
+}
+p .one{
+    text-decoration: none;
+    font-size: 20px;
+}
+/* project */
+.container{
+    display: grid;
+    padding: 20px;
+    grid-gap: 1%;
+    grid-template-areas:
+    'title title title'
+    'left-side article right-side';
+    font-family: 'Nunito', sans-serif;
+    
+    
+}
+
+#title {
+    
+    grid-area: title;
+    text-align: center;
+    padding: 80px;
+    /* font-size: 24px; */
+    font-family: 'Nunito', sans-serif;
+}
+
+
+#article{
+    grid-area: article;
+    
+}
+#left-side{
+    grid-area: left-side;
+}
+#right-side{
+    grid-area: right-side;
+}
+/* contact */
+
+.contact {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Nunito', sans-serif; 
+}
+
+.contact {
+    position: relative;
+    min-height: 100vh;
+    padding: 50px 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    /* background: url(https://t4.ftcdn.net/jpg/03/72/65/37/240_F_372653737_u6ks1dSxmi8txHeHOsW9qT285roteVdP.jpg); */
+    background-size: cover;
+}
+
+.contact .content {
+    max-width: 800px;
+    text-align: center;
+}
+
+.contact .content h2 {
+    font-size: 36px;
+    font-weight: 500;
+    columns: #fff;
+
+}
+
+.contact .content p {
+    font-weight: 300;
+    color: #fff;
+}
+
+.containerContact {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.containerContact .contactInfo {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+.containerContact .contactInfo .box {
+    position: relative;
+    padding: 20px 0;
+    display: flex;
+}
+.containerContact .contactInfo .box .icon{
+    min-width: 60px;
+    height: 60px;
+    background: red; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-size: 22;
+}
+.containerContact .contactInfo .box .text{
+    display: flex;
+    margin-left: 20px;
+    font-size: 16px;
+    color: #fff;
+    flex-direction: column;
+    font-weight: 300;
+}
+
+.containerContact .contactInfo .box .text h3{
+    font-weight: 500;
+    color: #00bcd0;
+}
+.contactForm{
+    width: 40%;
+    padding: 40px;
+    background: #fff;
+}
+.contactForm h2{
+    font-size: 30px;
+    color: #333;
+    font-weight: 500;
+}
+.contactForm .inputBox{
+    position: relative;
+    width: 100%;
+}
+.contactForm .inputBox input,
+.contactForm .inputBox textarea{
+
+    width: 100%;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    border: none;
+    border-bottom: 2px solid #333;
+    outline: none;
+    resize: none;
+}
+.contactForm .inputBox span{
+    position: absolute;
+    left: 0;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    pointer-events: none;
+    transition: 0.5s;
+    color: #666;
+}
+.contactForm .inputBox input:focus ~ span,
+.contactForm .inputBox input:valid ~ span,
+.contactForm .inputBox textarea:focus ~ span,
+.contactForm .inputBox textarea:valid ~ span{
+    color: #143ba8;
+    font-size: 12px;
+    transform: translateY(-20px);
+}
+.contactForm .inputBox input[type="submit"]{
+    width: 100px;
+    background: #00bcd4;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 18px;
+
+}
+@media (max-width: 991px) {
+    .contact{
+        padding: 50px;
+    }
+    .containerContact{
+        flex-direction: column;
+
+    }
+    .containerContact .contactInfo{
+        margin-bottom: 40px;
+    }
+    .containerContact .contactInfo,
+    .contactForm{
+        width: 100%;
+    }
+
+    
+}
