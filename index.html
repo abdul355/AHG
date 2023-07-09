@@ -4,135 +4,256 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
-
-    <title>Portfolio</title>
+    <title>AHG Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/c8e4d183c2.js" crossorigin="anonymous"></script>
 </head>
 <body>
-
-    <!--Home section -->
-    <div class="hero" id="home">
+    <!--main------>
+    <section id="main">
+        <!--navigation-->
         <nav>
-            <h2 class="logo">Portfo<span>lio</span></h2>
-            <ul>
-                <li><a href="#home">HOME</a></li>
-                <li><a href="#about">ABOUT</a></li>
-                <li><a href="#services">SERVICES</a></li>
-                <li><a href="#contact">CONTACT</a></li>
-            </ul>
-            
+            <!--logo-->
+            <a href="#" class="logo">AHG</a>
+            <div class="toggle"></div>
+            <!--menu-->
+           <ul class="menu">
+            <li><a href="#main" class="active">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact-form">Contact</a></li>
+           </ul> 
+           <!--language-->
+           <a href="" class="lang"></a>
         </nav>
-        <div class="content">
-            <h4>Hello, my name is</h4>
-            <h1>Abdul Hafiz <span>Ghanizada</span></h1>
-            <h3>I'm a student at Renton Technical College</h3>
-            <div class="newslatter">
-                <!-- <form>
-                    <input type="email" name="email" id="mail" placeholder="Enter Your Email">
-                    <input type="submit" name="submit" value="Lets Start">
-                </form> -->
-
-            </div>
+        <!--Name-->
+        <div class="name">
+            <p>Hello</p>
+            <h1>I'm Abdul <font color="#17dac">Hafiz</font> Ghanizada</h1>
+            <p class="details" >A professional web developer who can build
+                responsive websites for your business.
+            </p>
+            <a href="#" class="cv-btn">Download Resume</a>
         </div>
-    </div>
-
-    <!--About section -->
-    <section class="about" id="about">
-        <div class="main">
-            <img src="/imag.jpg">
-            <div class="about-text">
-                <h2>About Me</h2>
-                <h5><span>Student</span></h5>
-                <p>I study computer science program at Renton Technical College. 
-                    I have successfully completed my fist year at RTC. I have achieved 3.7 GPA so for.
-                    I would like to become a Software/Web Developer. 
-                </p>
-                <button type="button" > <a href="/Abdul Hafiz Ghanizada Resume.docx Amazon.docx">Read My Resume</a></button>
-
-            </div>
+        <!--Social------------->
+        <div class="social">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
         </div>
+        <!--arrow-------------->
+        <!-- <div class="arrow"></div> -->
+    </section>
+    <!--about---------------------->
+    <section id="about">
+        <div class="about-text">
+        <h1>About Me</h1>
+        <h2>Freelancing frontEnd Developer</h2>
+        <p>With years of experience in HTML, CSS, JavaScript, and various 
+            front-end frameworks, I have the technical knowledge to bring your
+             designs to life. Whether it's building responsive websites, 
+             developing interactive web applications, or optimizing existing 
+             interfaces, I am committed to delivering high-quality solutions 
+             that meet your specific requirements.</p>
+        <button>View More Details</button>
+        </div>
+        
+        <div class="about-model">
+             <img src="/Images/My Image.jpg" alt="model">
+        </div>
+
     </section>
 
-    <!--Services section -->
-    <div class="services" id="services">
-        <div class="title">
-            <h2>Services</h2>
+    <!--services-------------------->
+	<section id="services">
+        <!--heading-------------->
+        <div class="s-heading">
+        <h1>Services</h1>
+        <p>Here Is The Some Servies Which We Provide You.</p>
         </div>
-
-        <div class="box">
-            <div class="card">
-                <i class="fa-solid fa-bars"></i>
-                <h5>Web Development</h5>
-                <div class="pra">
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                        Aspernatur deleniti soluta, unde iure veritatis accusamus ea
-                         mollitia velit tempora quam laudantium beatae perspiciatis 
-                         fugiat repudiandae, placeat iste, repellendus aliquam dolores!
-                    </p>
-
-                    <p style="text-align: center;">
-                        <a class="button" href="#">Read More</a>
-                    </p>
-                </div>
-            </div>
-
-            <div class="card">
-                <i class="fa-regular fa-user"></i>
-                <h5>Web Development</h5>
-                <div class="pra">
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                        Aspernatur deleniti soluta, unde iure veritatis accusamus ea
-                         mollitia velit tempora quam laudantium beatae perspiciatis 
-                         fugiat repudiandae, placeat iste, repellendus aliquam dolores!
-                    </p>
-
-                    <p style="text-align: center;">
-                        <a class="button" href="#">Read More</a>
-                    </p>
-                </div>
-            </div>
-
-            <div class="card">
-                <i class="fa-solid fa-bell"></i>
-                <h5>Web Development</h5>
-                <div class="pra">
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                        Aspernatur deleniti soluta, unde iure veritatis accusamus ea
-                         mollitia velit tempora quam laudantium beatae perspiciatis 
-                         fugiat repudiandae, placeat iste, repellendus aliquam dolores!
-                    </p>
-
-                    <p style="text-align: center;">
-                        <a class="button" href="#">Read More</a>
-                    </p>
-                </div>
-            </div>
-
+        <!--services-box-container--------->
+        <div class="b-container">
+        <!--box-1---------------->
+        <div class="s-box">
+        <!--img------------->
+        <div class="s-b-img">
+            <!--type----------->
+            <div class="s-type">Front-End</div>
+            <!--name------->
+            <img src="/Images/Frontend-image.jpg">
         </div>
-    </div>
+        <!--text----------------->
+        <div class="s-b-text">
+        <a href="#">With a strong eye for design and a focus on creating 
+            intuitive user experiences, I can transform your ideas into visually
+             stunning and highly functional websites. Whether you need a
+              responsive website, a dynamic web application, or a seamless 
+              e-commerce platform, I have the technical skills and creative
+               mindset to make it happen.</a>	
+        </div>
+        </div>
+            <!--box-2---------------->
+        <div class="s-box">
+        <!--img------------->
+        <div class="s-b-img">
+        <!--type----------->
+            <div class="s-type">Back-End</div>
+            <!--name------->
+            <img src="/Images/backend-image.jpg">
+        </div>
+        <!--text----------------->
+        <div class="s-b-text">
+        <a href="#">With a deep understanding of server-side technologies, 
+            databases, and APIs, I can build robust and scalable back-end 
+            systems that support your application's functionality. From handling 
+            data storage and retrieval to implementing secure user authentication
+             and authorization, I have the technical knowledge to ensure your 
+             application operates seamlessly.</a>	
+        </div>
+        </div>
+            <!--box-3---------------->
+        <div class="s-box">
+        <!--img------------->
+        <div class="s-b-img">
+            <!--type----------->
+            <div class="s-type">SEO</div>
+            <!--name------->
+            <img src="/Images/SEO-Image.jpg">
+        </div>
+        <!--text----------------->
+        <div class="s-b-text">
+        <a href="#">With a deep understanding of search engine algorithms and best practices, 
+            I can implement effective SEO strategies to improve your website's 
+            visibility in search results. From keyword research and on-page 
+            optimization to technical SEO enhancements, I have the expertise
+             to ensure that your website is optimized for maximum organic traffic.</a>	
+        </div>
+        </div>
+        </div>
+        </section>
+     <!--portfolio------------------->
+	<!-- <section id="portfolio">
+     
+        <h1 class="p-headind">Portfolio</h1>
+       
+        <div class="p-container">
+       
+        <div class="p-box">
+       
+        <div class="overlay-text">
+        <h1>Writting</h1>
+        <p>Client Project</p>	
+        </div>
+       
+        <img src="images/w1.jpg">
+            
+        </div>
+       
+        <div class="p-box">
+            
+        <div class="overlay-text">
+        <h1>Ideas</h1>
+        <p>Client Project</p>	
+        </div>
+        
+        <img src="images/w2.jpg">
+        </div>
+       
+        <div class="p-box">
+        
+        <div class="overlay-text">
+        <h1>Music</h1>
+        <p>Client Project</p>	
+        </div>
+      
+        <img src="images/w3.jpg">
+        </div>
+       
+        <div class="p-box">
+     
+        <div class="overlay-text">
+        <h1>Time</h1>
+        <p>Client Project</p>	
+        </div>
+        	
+        <img src="images/w4.jpg">
+        </div>
+      
+        <div class="p-box">
+       
+        <div class="overlay-text">
+        <h1>Creative</h1>
+        <p>Client Project</p>	
+        </div>
+       
+        <img src="images/w5.jpg">
+        </div>
+    
+        <div class="p-box">
+        
+        <div class="overlay-text">
+        <h1>Books</h1>
+        <p>Client Project</p>	
+        </div>
+       
+        <img src="images/w6.jpg">
+        </div>
+            
+        </div>
+        </section> -->
 
-    <!--Contact section -->
-    <div class="contact" id="contact">
-        <p>Let Me Work for You</p>
-        <a class="button-two" href="#">Hire Me</a>
 
-    </div>
-
-    <!--footer section -->
-    <footer>
-        <p>Abdul Hafiz Ghanizada</p>
-        <p>As a Computer Science program student looking for an entry-level job as a Software Developer, Software
-            Engineer or similar role.</p>
-        <div class="social">
-            <a href="https://www.linkedin.com/in/abdul-hafiz-ghanizada-501861236/"><i class="fa-brands fa-linkedin"></i></a>
-            <a href="mailto:aghaniza25@gmail.com"><i class="fa-solid fa-envelope"></i></a>
-            </div>
-        <p class="footer">CopyRight By Abdul Hafiz Ghanizada</p>
-    </footer>
+          <!--Contact-btn------------------>
+	    <section id="contact-btn">
+        <!--heading-------------->
+        <h1 class="c-b-heading">If You Have Any Project In Your Mind ?</h1>
+        <!--btn-------->
+            <button >Contact Me</button>
+        </section>
+          <!--contact-form------------------->
+	    <section id="contact-form">
+        <form>
+        <!--left--------------------------------------->
+        <div class="contact-left">
+        <h1 class="c-l-heading"><font style="border-bottom: 3px solid #1ED98B;">Writ</font>e us</h1>
+        <!--name-------->
+        <div class="f-name">
+        <font >Name</font>
+        <input type="text" placeholder="Full Name"/>
+        </div>
+        <!--email-------->
+        <div class="f-email">
+        <font >Email</font>
+        <input type="email" placeholder="Example@gmail.com"/>
+        </div>
+        </div>
+        <!--right------------------------------------------->
+        <div class="contact-right">
+        <!--message-------->
+        <div class="message">
+        <font >Message</font>
+        <textarea name="message" rows="5" cols="20" placeholder="Write Message..."></textarea>
+        </div>
+        <!--submit-btn------------>
+        <button type="submit"> submit</button>
+        </div>
+            
+        </form>
+        </section>
+        <script type="text/javascript" src="/js/jquery-3.7.0.js"></script>
+	    <script type="text/javascript">
+              /*Responsive Navigation*/
+	    $(document).ready(function(){
+	    $('.toggle').click(function(){
+		 $('.toggle').toggleClass('active')
+		 
+		 $('nav ul').toggleClass('active-menu')
+				 
+	        })
+        });
+	
+	    </script>
 </body>
 </html>
