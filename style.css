@@ -213,10 +213,12 @@ nav{
 	border: none;
 	outline: none;
 	background-color:#17d1ac;
+	cursor: pointer;
 }
 .about-text button:hover{
 	background-color: #FFFFFF;
 	transition: all ease 0.3s;
+	
 }
 #services{
     width:100%;
