@@ -16,9 +16,9 @@ a{
 	height: 100vh;
 	box-sizing: border-box;
 	background-size: 1000px;
-	background-position: right bottom;
+	background-position: right center;
 	background-repeat: no-repeat;
-	background-image: url("/Images/Background-img.jpg");
+	background-image: url("Images/Background-img.jpg");
 	
 	/* background-color: #edf1fd; */
 	background-color: #ffffff;
